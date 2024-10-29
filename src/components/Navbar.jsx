@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import { Link } from 'react-router-dom';
-import '../styles/NavBar.css' // Optional: for styling
+import '../styles/NavBarStyle.css' // Optional: for styling
 
 const Navbar = () => {
   return (

@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"; 
-import './styles/App.css';
+import './styles/AppStyle.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home"; // Correct path
 import AboutMe from "./components/AboutMe"; // Correct casing
