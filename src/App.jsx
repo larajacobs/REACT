@@ -1,29 +1,22 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import Navbar from "./components/Navbar"; 
 import './styles/App.css';
-import AppRoutes from './routes';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home"; // Correct path
+import AboutMe from "./components/AboutMe"; // Correct casing
+import Payment from "./components/Payment"; // Correct path
+import Sell from "./components/Sell"; // Correct path
 
 function App() {
   return (
-    <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1> */}
-
-      {/* Render the routes defined in AppRoutes */}
-      <AppRoutes />
-      
-      {/* <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/sell" element={<Sell />} />
+      </Routes>
+    </Router>
   );
 }
 

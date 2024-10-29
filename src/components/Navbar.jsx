@@ -1,14 +1,13 @@
 // src/components/Navbar.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
-// import './styles/NavBar.css'; // Ensure this path is correct
+import '../styles/NavBar.css' // Optional: for styling
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav>
-      <ul style={{ display: 'flex', listStyle: 'none' }}>
+    <nav className="navbar">
+      <ul>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/payment">Payment</Link>
@@ -22,6 +21,6 @@ function Navbar() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
