@@ -1,0 +1,48 @@
+# Node modules
+node_modules/
+
+# Build directories
+build/
+dist/
+
+# .env files (for environment variables)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+*.log
+
+# IDE and Editor folders
+.vscode/
+.idea/
+
+# MacOS Finder
+.DS_Store
+
+# npm and yarn lock files (if you use both)
+package-lock.json
+yarn.lock
+
+# Test output directories
+coverage/
+
+# Dependency directories (for certain JavaScript frameworks)
+jspm_packages/
+
+# Yarn's cache
+.yarn/
+
+# Tailwind CSS output (if applicable)
+tailwind.config.js
+
+# Next.js (if applicable)
+.next/
+
+# React build output
+*.tgz
+
+# Temporary files created by build tools (e.g., webpack, parcel)
+.cache/

@@ -1,27 +1,35 @@
 /* src/components/Navbar.css */
 .navbar {
-    background-color: #ffcb2e; /* Change to your desired color */
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem; /* Space between links */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar a {
-    color: rgb(0, 0, 0); /* Link color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--navbar-bg-color, #ffcb2e); /* Set default background color */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: var(--navbar-link-color, rgb(0, 0, 0)); /* Set default link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Apply dark mode styles */
+[data-theme="dark"] .navbar {
+  background-color: #050404; /* Dark background for navbar in dark theme */
+}
+
+[data-theme="dark"] .navbar a {
+  color: #fdc600; /* Light-colored text in dark theme */
+}

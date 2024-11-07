@@ -24,3 +24,5 @@ Currently, two official plugins are available:
   └─ package.json
 
 ```
+## Run the code
+npm run dev

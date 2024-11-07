@@ -1,5 +1,7 @@
 // src/components/Home.jsx
 import React from 'react';
+import Theme from "./Themes"; 
+
 
 function AboutMe() {
   return (
