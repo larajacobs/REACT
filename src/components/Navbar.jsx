@@ -1,6 +1,8 @@
 // src/components/Navbar.jsx
 import { Link } from 'react-router-dom';
 import '../styles/NavBarStyle.css' // Optional: for styling
+import { BrowserRouter as Router, Route, Routes, useLocation} from "react-router-dom";
+
 
 const Navbar = () => {
   
@@ -8,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/Home">Home</Link>
         </li>
         <li>
           <Link to="/payment">Payment</Link>
@@ -23,5 +25,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
